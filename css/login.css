@@ -23,8 +23,9 @@ body {
 }
 /* side photo css */
 section {
-    height: 100%;
-    width: 50%;
+    height: 100vh;
+    flex:1;
+    min-width:0;
 }
 
 .carousel-image {
