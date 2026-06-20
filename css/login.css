@@ -81,9 +81,10 @@ section {
 
 .role_btn {
     display: flex;
-    gap: 30px;
+    gap: 15px;
     margin: 20px 0;
-    flex-wrap: wrap;
+    justify-content:center;
+    width:100%;
 }
 
 .role_btn .btns {
