@@ -30,7 +30,7 @@ function prepareAndExecute($conn, $sql, $params)
     <!-- Loading Bar -->
     <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
     <link rel="stylesheet" href="./css/flash.css">
-    <title>Hotel Blue Bird</title>
+    <title>Feni Hotel</title>
 </head>
 
 <body>
@@ -56,7 +56,7 @@ function prepareAndExecute($conn, $sql, $params)
     <section id="auth_section">
         <div class="logo">
             <img class="bluebirdlogo" src="./image/bluebirdlogo.png" alt="logo">
-            <p>BLUEBIRD</p>
+            <p>Feni Hotel</p>
         </div>
         <div class="auth_container">
             <!-- Login -->
