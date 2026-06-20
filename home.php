@@ -45,7 +45,7 @@ if($usermail == true){
   <nav>
     <div class="logo">
       <img class="bluebirdlogo" src="./image/bluebirdlogo.png" alt="logo">
-      <p>BLUEBIRD</p>
+      <p>Feni Hotel</p>
     </div>
     <ul>
       <li><a href="#firstsection">Home</a></li>
@@ -72,7 +72,7 @@ if($usermail == true){
         </div>
 
         <div class="welcomeline">
-          <h1 class="welcometag">Welcome to heaven on earth</h1>
+          <h1 class="welcometag">Welcom to Feni hotel</h1>
         </div>
 
       <!-- bookbox -->
@@ -126,8 +126,8 @@ if($usermail == true){
                     <select name="NoofRoom" class="selectinput">
 						<option value selected >No of Room</option>
                         <option value="1">1</option>
-                        <!-- <option value="1">2</option>
-                        <option value="1">3</option> -->
+                        <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <select name="Meal" class="selectinput">
 						<option value selected >Meal</option>
@@ -204,7 +204,7 @@ if($usermail == true){
   <section id="secondsection"> 
     <img src="./image/homeanimatebg.svg">
     <div class="ourroom">
-      <h1 class="head">≼ Our room ≽</h1>
+      <h1 class="head">≼ Our rooms ≽</h1>
       <div class="roomselect">
         <div class="roombox">
           <div class="hotelphoto h1"></div>
