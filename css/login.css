@@ -1,1 +1,265 @@
-        
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Cookie&family=Poppins:wght@600&display=swap');
+
+:root {
+    --bg-text-shadow: 0 2px 4px rgb(13 0 77 / 8%),
+                      0 3px 6px rgb(13 0 77 / 8%),
+                      0 8px 16px rgb(13 0 77 / 8%);
+    --bg-box-shadow: 0px 0px 20px 6px rgb(0 0 0 / 34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+}
+
+/* ===========================
+   LEFT IMAGE SECTION
+=========================== */
+
+.carousel_section {
+    flex: 1;
+    min-width: 50%;
+    box-shadow: var(--bg-box-shadow);
+}
+
+.carousel-inner,
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-inner::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 255, 0.15);
+    z-index: 1;
+}
+
+/* ===========================
+   RIGHT LOGIN SECTION
+=========================== */
+
+#auth_section {
+    flex: 1;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    background: #fff;
+}
+
+.logo {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.logo .bluebirdlogo {
+    height: 100%;
+}
+
+.logo p {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 32px;
+    color: rgb(66, 68, 74);
+    text-shadow: var(--bg-text-shadow);
+}
+
+.auth_container {
+    width: 100%;
+    max-width: 650px;
+    padding: 20px;
+}
+
+#Log_in,
+#sign_up {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sign_up {
+    display: none;
+}
+
+.role_btn {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.role_btn .btns {
+    height: 40px;
+    width: 180px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(93, 102, 116, 0.318);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.role_btn .btns:hover,
+.btns.active {
+    background-image: linear-gradient(
+        90deg,
+        rgba(76, 185, 236, 0.527),
+        rgba(0, 30, 255, 0.456)
+    );
+    color: white;
+}
+
+.authsection,
+.user_signup {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    animation: screen_animation .4s;
+}
+
+.authsection {
+    display: none;
+}
+
+.user_login.active,
+.employee_login.active {
+    display: block;
+}
+
+.form-floating {
+    margin: 15px 0;
+}
+
+.auth_btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(118, 141, 176, 0.318);
+    position: relative;
+    overflow: hidden;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.auth_btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.3s;
+    background-image: linear-gradient(
+        90deg,
+        rgba(76, 185, 236, 0.527),
+        rgba(0, 30, 255, 0.456)
+    );
+}
+
+.auth_btn:hover {
+    color: white;
+}
+
+.auth_btn:hover::before {
+    width: 100%;
+}
+
+.footer_line {
+    margin-top: 20px;
+}
+
+.page_move_btn {
+    color: rgba(0, 0, 255, 0.6);
+    cursor: pointer;
+}
+
+.page_move_btn:hover {
+    color: blue;
+}
+
+@keyframes screen_animation {
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (max-width: 1024px) {
+
+    .logo p {
+        font-size: 24px;
+    }
+
+    .role_btn .btns {
+        width: 150px;
+    }
+
+    .authsection,
+    .user_signup {
+        max-width: 450px;
+    }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .carousel_section {
+        display: none;
+    }
+
+    #auth_section {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .auth_container {
+        padding: 15px;
+    }
+
+    .role_btn .btns {
+        width: 120px;
+    }
+
+    .logo p {
+        font-size: 22px;
+    }
+}
